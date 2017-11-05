@@ -10,6 +10,8 @@ import Foundation
 import SafariServices
 import InstagramKit
 
+fileprivate let kPageCount = 20;
+
 class InstaFeedService: NSObject, InstaFeedServiceInterface {
 
     // MARK: Private variables
@@ -25,81 +27,48 @@ class InstaFeedService: NSObject, InstaFeedServiceInterface {
         self.instaEngine = sdkEngine
     }
     
-    // MARK: Private methods
+    // MARK: InstaFeedServiceInterface
     
-    private func authorize(userId: String?) {
-        
-//        self.authSession = SFAuthenticationSession(url: self.authUrl!, callbackURLScheme: "testschema://", completionHandler: { [weak self] (url, error) in
-//
-//            guard let strongSelf = self else {
-//                return
-//            }
-//
-//            guard error == nil else {
-//                strongSelf.result?(FeedFetchResult.fail(reason: error!.localizedDescription))
-//                return
-//            }
-//            guard let url = url else {
-//                strongSelf.result?(FeedFetchResult.fail(reason: "Unable to authorize"))
-//                return
-//            }
-//
-//            do {
-//                try strongSelf.instaEngine.receivedValidAccessToken(from: url)
-//                strongSelf.fetchAuthorizedFeed(userId: userId, result: strongSelf.result!)
-//            }
-//            catch {
-//                strongSelf.result?(FeedFetchResult.fail(reason: error.localizedDescription))
-//            }
-//
-//        })
-//        self.authSession?.start()
-    }
-    
-    private func fetchAuthorizedFeed(userId: String?, result: @escaping (FeedFetchResult) -> Void) {
+    func fetchFeed(userId: String?, nextPageId: String?, result: @escaping (FeedFetchResult) -> Void) {
         
         if let userId = userId, !userId.isEmpty {
             
-            self.instaEngine.getMediaForUser(userId, withSuccess: {(media, info) in
+            self.instaEngine.getMediaForUser(userId, count: kPageCount, maxId: nextPageId, withSuccess: {(media, info) in
                 
+                print("Received feed: \(media)")
                 let feed = media.map({ FeedItem(id: $0.id,
+                                                author: $0.user.username,
                                                 text: $0.caption?.text ?? "",
-                                                imageUrl: $0.thumbnailURL) })
-                result(FeedFetchResult.success(feed: feed))
+                                                imageUrl: $0.thumbnailURL,
+                                                likes: $0.likesCount) })
+                result(FeedFetchResult.success(feed: feed, nextPageId: info.nextMaxId))
                 
             }, failure: { (error, code) in
                 
-                result(FeedFetchResult.fail(reason: error.localizedDescription))
+                if code == 400 {
+                    result(FeedFetchResult.fail(reason: "User doesn't exist"))
+                }
+                else {
+                    result(FeedFetchResult.fail(reason: error.localizedDescription))
+                }
             })
         }
         else {
             
-            self.instaEngine.getSelfRecentMedia(success: {(media, info) in
+            self.instaEngine.getSelfRecentMedia(withCount: kPageCount, maxId: nextPageId, success: {(media, info) in
                 
+                print("Received feed: \(media)")
                 let feed = media.map({ FeedItem(id: $0.id,
+                                                author: $0.user.username,
                                                 text: $0.caption?.text ?? "",
-                                                imageUrl: $0.thumbnailURL) })
-                result(FeedFetchResult.success(feed: feed))
+                                                imageUrl: $0.thumbnailURL,
+                                                likes: $0.likesCount) })
+                result(FeedFetchResult.success(feed: feed, nextPageId: info.nextMaxId))
                 
             }, failure: { (error, code) in
                 
                 result(FeedFetchResult.fail(reason: error.localizedDescription))
             })
         }
-    }
-    
-    // MARK: InstaFeedServiceInterface
-    
-    func fetchFeed(userId: String?, result: @escaping (FeedFetchResult) -> Void) {
-        
-        guard self.instaEngine.accessToken != nil else {
-            
-            self.result = result
-            self.authUrl = self.instaEngine.authorizationURL(for: .publicContent)
-            self.authorize(userId: userId)
-            return
-        }
-        
-        self.fetchAuthorizedFeed(userId: userId, result: result)
     }
 }

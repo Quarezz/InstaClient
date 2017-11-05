@@ -10,7 +10,7 @@ import Foundation
 import UIKit.UIWebView
 
 enum FeedFetchResult {
-    case success(feed: [FeedItem])
+    case success(feed: [FeedItem], nextPageId: String?)
     case fail(reason: String)
 }
 
@@ -20,7 +20,7 @@ protocol InstaFeedServiceInterface {
     
     /// Fetch instagramm feed for specified user
     /// - parameter userId: identifier of instagramm user. If nil - current user is used
-    /// - parameter inView: client viewController that will be used for SFSafariViewController presentation for login flow
+    /// - parameter pageId: id of next page
     /// - parameter result: completion block with result state
-    func fetchFeed(userId: String?, result: @escaping FeedCompletion)
+    func fetchFeed(userId: String?, nextPageId: String?, result: @escaping FeedCompletion)
 }

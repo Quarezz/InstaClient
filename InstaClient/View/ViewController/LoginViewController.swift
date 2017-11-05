@@ -29,10 +29,6 @@ class LoginViewController: UIViewController {
         
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .done, target: self, action: #selector(tappedBack))
         self.webView.delegate = self.loginModel
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         
         self.loginModel.login(webView: self.webView) {[weak self] (error) in
             

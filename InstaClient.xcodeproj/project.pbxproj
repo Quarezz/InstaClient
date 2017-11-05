@@ -23,6 +23,8 @@
 		2E71F9911FAF5F34001417AE /* InstaSessionServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71F9901FAF5F34001417AE /* InstaSessionServiceInterface.swift */; };
 		2E71F9931FAF61F6001417AE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71F9921FAF61F6001417AE /* LoginViewController.swift */; };
 		2E71F9951FAF635C001417AE /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71F9941FAF635C001417AE /* LoginModel.swift */; };
+		2E827CDE1FAF7E5E004118E7 /* FeedItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E827CDD1FAF7E5E004118E7 /* FeedItemCell.swift */; };
+		2E827CE01FAF7EF7004118E7 /* FeedItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E827CDF1FAF7EF7004118E7 /* FeedItemCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		2E71F9901FAF5F34001417AE /* InstaSessionServiceInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaSessionServiceInterface.swift; sourceTree = "<group>"; };
 		2E71F9921FAF61F6001417AE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2E71F9941FAF635C001417AE /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		2E827CDD1FAF7E5E004118E7 /* FeedItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemCell.swift; sourceTree = "<group>"; };
+		2E827CDF1FAF7EF7004118E7 /* FeedItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedItemCell.xib; sourceTree = "<group>"; };
 		50C6AE259E1BC6D2C35D1572 /* Pods-InstaClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstaClient/Pods-InstaClient.release.xcconfig"; sourceTree = "<group>"; };
 		AAB2FAA2876419F94EFFA537 /* Pods-InstaClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstaClient/Pods-InstaClient.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -162,6 +166,7 @@
 		2E71F96A1FAF32C5001417AE /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				2E827CDD1FAF7E5E004118E7 /* FeedItemCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 				2E71F9751FAF32F7001417AE /* LaunchScreen.storyboard */,
 				2E71F9791FAF32F7001417AE /* Info.plist */,
 				2E71F98C1FAF37FB001417AE /* Feed.storyboard */,
+				2E827CDF1FAF7EF7004118E7 /* FeedItemCell.xib */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -297,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E827CE01FAF7EF7004118E7 /* FeedItemCell.xib in Resources */,
 				2E71F97A1FAF32F7001417AE /* Assets.xcassets in Resources */,
 				2E71F97B1FAF32F7001417AE /* LaunchScreen.storyboard in Resources */,
 				2E71F98D1FAF37FB001417AE /* Feed.storyboard in Resources */,
@@ -375,6 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E827CDE1FAF7E5E004118E7 /* FeedItemCell.swift in Sources */,
 				2E71F9911FAF5F34001417AE /* InstaSessionServiceInterface.swift in Sources */,
 				2E71F97F1FAF3344001417AE /* FeedViewController.swift in Sources */,
 				2E71F9821FAF3402001417AE /* FeedModel.swift in Sources */,

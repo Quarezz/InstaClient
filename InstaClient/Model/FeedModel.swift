@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit.UIImage
 
 class FeedModel {
     
@@ -31,12 +32,18 @@ class FeedModel {
     }
     
     public func fetchFeed(userId: String?, result: @escaping FeedCompletion) {
-        
-        self.feedService.fetchFeed(userId: userId, result: result)
+        self.feedService.fetchFeed(userId: userId, nextPageId: nil, result: result)
+    }
+    
+    public func loadMore(userId: String?, nextPageId: String, result: @escaping FeedCompletion) {
+        self.feedService.fetchFeed(userId: userId, nextPageId: nextPageId, result: result)
+    }
+    
+    public func postImageWithUrl(url: URL) -> UIImage {
+        return UIImage(named: "placeholder")!
     }
     
     public func clearFeed() {
-        
         self.sessionService.invalidateSession()
     }
 }
