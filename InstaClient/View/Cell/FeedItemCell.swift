@@ -27,22 +27,6 @@ class FeedItemCell: UITableViewCell {
     }
     
     public func updateImage(image: UIImage) {
-        
         self.thumbImageView.image = image
     }
-    
-//    public func sizeForData(_ data: FeedItem) -> CGSize {
-//
-//        let string = data.text
-//        let left = self.captionLabel.constraints.filter({$0.firstAttribute == .leading}).first?.constant ?? 0
-//        let right = self.captionLabel.constraints.filter({$0.firstAttribute == .trailing}).first?.constant ?? 0
-//
-//        let size = string.boundingRect(with: CGSize(width: self.bounds.width - (left+right), height: CGFloat.greatestFiniteMagnitude),
-//                                       options: .usesFontLeading,
-//                                       attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 15)],
-//                                       context: nil).size
-//        let contentHeight = CGFloat(301)
-//
-//        return CGSize(width: self.frame.width, height: contentHeight + size.height)
-//    }
 }
