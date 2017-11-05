@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1DAAF2C6BD8DDB4BE7220EF9 /* Pods_InstaClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040867F46A4AE4A68EBBF969 /* Pods_InstaClient.framework */; };
-		2E71F9541FAF3210001417AE /* InstaClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71F9531FAF3210001417AE /* InstaClientTests.swift */; };
 		2E71F9711FAF32C5001417AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71F9671FAF32C5001417AE /* AppDelegate.swift */; };
 		2E71F97A1FAF32F7001417AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E71F9741FAF32F7001417AE /* Assets.xcassets */; };
 		2E71F97B1FAF32F7001417AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E71F9751FAF32F7001417AE /* LaunchScreen.storyboard */; };
@@ -29,6 +28,14 @@
 		2E827CE31FAF8FA9004118E7 /* InstaFeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71F9851FAF341E001417AE /* InstaFeedService.swift */; };
 		2E827CE41FAF8FB5004118E7 /* InstaFeedServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71F9831FAF340F001417AE /* InstaFeedServiceInterface.swift */; };
 		2E827CE51FAF914A004118E7 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71F9881FAF3533001417AE /* FeedItem.swift */; };
+		2E827CE81FAF9B74004118E7 /* InstaSessionServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E827CE71FAF9B74004118E7 /* InstaSessionServiceTests.swift */; };
+		2E827CE91FAF9C00004118E7 /* InstaSessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71F98E1FAF5E47001417AE /* InstaSessionService.swift */; };
+		2E827CEA1FAF9C01004118E7 /* InstaSessionServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71F9901FAF5F34001417AE /* InstaSessionServiceInterface.swift */; };
+		2E827CEC1FAF9C84004118E7 /* ImagesCacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E827CEB1FAF9C84004118E7 /* ImagesCacheService.swift */; };
+		2E827CF11FAFAA94004118E7 /* ImagesCacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E827CEB1FAF9C84004118E7 /* ImagesCacheService.swift */; };
+		2E827CF71FAFAD3C004118E7 /* ImageCacheServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E827CED1FAF9CB5004118E7 /* ImageCacheServiceTests.swift */; };
+		2E827CF81FAFAD44004118E7 /* testImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E827CF51FAFACCE004118E7 /* testImage.jpg */; };
+		2E827CF91FAFAD8A004118E7 /* testImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E827CF51FAFACCE004118E7 /* testImage.jpg */; };
 		6BE53F33DF3DF51C0D4E60BC /* Pods_InstaClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A2820FCDAAE5F110A50C8B8 /* Pods_InstaClientTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +55,6 @@
 		1205408897E26D39900FF182 /* Pods-InstaClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaClientTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstaClientTests/Pods-InstaClientTests.release.xcconfig"; sourceTree = "<group>"; };
 		2E71F93B1FAF3210001417AE /* InstaClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E71F94F1FAF3210001417AE /* InstaClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E71F9531FAF3210001417AE /* InstaClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaClientTests.swift; sourceTree = "<group>"; };
 		2E71F9551FAF3210001417AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E71F9671FAF32C5001417AE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E71F9741FAF32F7001417AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,6 +74,10 @@
 		2E827CDD1FAF7E5E004118E7 /* FeedItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemCell.swift; sourceTree = "<group>"; };
 		2E827CDF1FAF7EF7004118E7 /* FeedItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedItemCell.xib; sourceTree = "<group>"; };
 		2E827CE11FAF8F47004118E7 /* InstaFeedServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaFeedServiceTests.swift; sourceTree = "<group>"; };
+		2E827CE71FAF9B74004118E7 /* InstaSessionServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaSessionServiceTests.swift; sourceTree = "<group>"; };
+		2E827CEB1FAF9C84004118E7 /* ImagesCacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCacheService.swift; sourceTree = "<group>"; };
+		2E827CED1FAF9CB5004118E7 /* ImageCacheServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheServiceTests.swift; sourceTree = "<group>"; };
+		2E827CF51FAFACCE004118E7 /* testImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = testImage.jpg; sourceTree = "<group>"; };
 		50C6AE259E1BC6D2C35D1572 /* Pods-InstaClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstaClient/Pods-InstaClient.release.xcconfig"; sourceTree = "<group>"; };
 		8A2820FCDAAE5F110A50C8B8 /* Pods_InstaClientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaClientTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAB2FAA2876419F94EFFA537 /* Pods-InstaClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstaClient/Pods-InstaClient.debug.xcconfig"; sourceTree = "<group>"; };
@@ -129,9 +139,10 @@
 		2E71F9521FAF3210001417AE /* InstaClientTests */ = {
 			isa = PBXGroup;
 			children = (
-				2E71F9531FAF3210001417AE /* InstaClientTests.swift */,
 				2E71F9551FAF3210001417AE /* Info.plist */,
 				2E827CE11FAF8F47004118E7 /* InstaFeedServiceTests.swift */,
+				2E827CE71FAF9B74004118E7 /* InstaSessionServiceTests.swift */,
+				2E827CED1FAF9CB5004118E7 /* ImageCacheServiceTests.swift */,
 			);
 			path = InstaClientTests;
 			sourceTree = "<group>";
@@ -161,6 +172,7 @@
 				2E71F9851FAF341E001417AE /* InstaFeedService.swift */,
 				2E71F98E1FAF5E47001417AE /* InstaSessionService.swift */,
 				2E71F9901FAF5F34001417AE /* InstaSessionServiceInterface.swift */,
+				2E827CEB1FAF9C84004118E7 /* ImagesCacheService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -194,6 +206,7 @@
 		2E71F9731FAF32F7001417AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2E827CF51FAFACCE004118E7 /* testImage.jpg */,
 				2E71F9741FAF32F7001417AE /* Assets.xcassets */,
 				2E71F9751FAF32F7001417AE /* LaunchScreen.storyboard */,
 				2E71F9791FAF32F7001417AE /* Info.plist */,
@@ -324,6 +337,7 @@
 				2E71F97A1FAF32F7001417AE /* Assets.xcassets in Resources */,
 				2E71F97B1FAF32F7001417AE /* LaunchScreen.storyboard in Resources */,
 				2E71F98D1FAF37FB001417AE /* Feed.storyboard in Resources */,
+				2E827CF81FAFAD44004118E7 /* testImage.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +345,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E827CF91FAFAD8A004118E7 /* testImage.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +473,7 @@
 				2E71F9911FAF5F34001417AE /* InstaSessionServiceInterface.swift in Sources */,
 				2E71F97F1FAF3344001417AE /* FeedViewController.swift in Sources */,
 				2E71F9821FAF3402001417AE /* FeedModel.swift in Sources */,
+				2E827CEC1FAF9C84004118E7 /* ImagesCacheService.swift in Sources */,
 				2E71F9951FAF635C001417AE /* LoginModel.swift in Sources */,
 				2E71F98F1FAF5E47001417AE /* InstaSessionService.swift in Sources */,
 				2E71F98B1FAF36A9001417AE /* InstaFeedCoordinator.swift in Sources */,
@@ -473,11 +489,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E827CE81FAF9B74004118E7 /* InstaSessionServiceTests.swift in Sources */,
 				2E827CE31FAF8FA9004118E7 /* InstaFeedService.swift in Sources */,
-				2E71F9541FAF3210001417AE /* InstaClientTests.swift in Sources */,
+				2E827CEA1FAF9C01004118E7 /* InstaSessionServiceInterface.swift in Sources */,
+				2E827CF11FAFAA94004118E7 /* ImagesCacheService.swift in Sources */,
 				2E827CE21FAF8F47004118E7 /* InstaFeedServiceTests.swift in Sources */,
 				2E827CE51FAF914A004118E7 /* FeedItem.swift in Sources */,
+				2E827CF71FAFAD3C004118E7 /* ImageCacheServiceTests.swift in Sources */,
 				2E827CE41FAF8FB5004118E7 /* InstaFeedServiceInterface.swift in Sources */,
+				2E827CE91FAF9C00004118E7 /* InstaSessionService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
