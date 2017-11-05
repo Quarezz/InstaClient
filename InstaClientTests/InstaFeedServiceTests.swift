@@ -174,7 +174,7 @@ class InstaFeedServiceTests: XCTestCase {
         
         let mediaDummie = InstagramMedia(info: [
             "images": [
-                "thumbnail": [
+                "standard_resolution": [
                     "url": "http://foo.com",
                 ]
             ],

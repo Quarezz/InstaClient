@@ -10,7 +10,7 @@ import Foundation
 import SafariServices
 import InstagramKit
 
-fileprivate let kPageCount = 20;
+fileprivate let kPageCount = 19;
 
 class InstaFeedService: NSObject, InstaFeedServiceInterface {
 
@@ -39,7 +39,7 @@ class InstaFeedService: NSObject, InstaFeedServiceInterface {
                 let feed = media.map({ FeedItem(id: $0.id,
                                                 author: $0.user.username,
                                                 text: $0.caption?.text,
-                                                imageUrl: $0.thumbnailURL,
+                                                imageUrl: $0.standardResolutionImageURL,
                                                 likes: $0.likesCount) })
                 result(FeedFetchResult.success(feed: feed, nextPageId: info.nextMaxId))
                 
@@ -61,7 +61,7 @@ class InstaFeedService: NSObject, InstaFeedServiceInterface {
                 let feed = media.map({ FeedItem(id: $0.id,
                                                 author: $0.user.username,
                                                 text: $0.caption?.text,
-                                                imageUrl: $0.thumbnailURL,
+                                                imageUrl: $0.standardResolutionImageURL,
                                                 likes: $0.likesCount) })
                 result(FeedFetchResult.success(feed: feed, nextPageId: info.nextMaxId))
                 

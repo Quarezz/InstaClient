@@ -86,6 +86,15 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             self.navigationItem.leftBarButtonItem = self.logoutButton
             self.tableView.isHidden = false
             self.userInputView.isHidden = false
+            
+            self.feedModel.awaitForImageUpdates(callback: {[weak self] (url, image) in
+                
+                guard let strongSelf = self else { return }
+                guard let index = strongSelf.feed.index(where: {$0.imageUrl == url}) else { return }
+                guard let indexPath = strongSelf.tableView.indexPathsForVisibleRows?.filter({$0.row == index}).first else { return }
+                guard let cell = strongSelf.tableView.cellForRow(at: indexPath) as? FeedItemCell else { return }
+                cell.updateImage(image: image)
+            })
         }
         else {
             
@@ -108,6 +117,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
                 break
             case .fail(let reason):
                 
+                self?.feed = [FeedItem]()
+                self?.tableView.reloadData()
                 self?.showError(error: reason)
                 break
             }
