@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E71F93F1FAF3210001417AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71F93E1FAF3210001417AE /* AppDelegate.swift */; };
-		2E71F9411FAF3210001417AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71F9401FAF3210001417AE /* ViewController.swift */; };
-		2E71F9441FAF3210001417AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E71F9421FAF3210001417AE /* Main.storyboard */; };
-		2E71F9461FAF3210001417AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E71F9451FAF3210001417AE /* Assets.xcassets */; };
-		2E71F9491FAF3210001417AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E71F9471FAF3210001417AE /* LaunchScreen.storyboard */; };
 		2E71F9541FAF3210001417AE /* InstaClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71F9531FAF3210001417AE /* InstaClientTests.swift */; };
+		2E71F9711FAF32C5001417AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71F9671FAF32C5001417AE /* AppDelegate.swift */; };
+		2E71F9721FAF32C5001417AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71F96C1FAF32C5001417AE /* ViewController.swift */; };
+		2E71F97A1FAF32F7001417AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E71F9741FAF32F7001417AE /* Assets.xcassets */; };
+		2E71F97B1FAF32F7001417AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E71F9751FAF32F7001417AE /* LaunchScreen.storyboard */; };
+		2E71F97C1FAF32F7001417AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E71F9771FAF32F7001417AE /* Main.storyboard */; };
+		2E71F97D1FAF32F7001417AE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E71F9791FAF32F7001417AE /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,15 +28,15 @@
 
 /* Begin PBXFileReference section */
 		2E71F93B1FAF3210001417AE /* InstaClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E71F93E1FAF3210001417AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2E71F9401FAF3210001417AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2E71F9431FAF3210001417AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2E71F9451FAF3210001417AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2E71F9481FAF3210001417AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2E71F94A1FAF3210001417AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E71F94F1FAF3210001417AE /* InstaClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E71F9531FAF3210001417AE /* InstaClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaClientTests.swift; sourceTree = "<group>"; };
 		2E71F9551FAF3210001417AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E71F9671FAF32C5001417AE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2E71F96C1FAF32C5001417AE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2E71F9741FAF32F7001417AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E71F9761FAF32F7001417AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2E71F9781FAF32F7001417AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2E71F9791FAF32F7001417AE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +78,11 @@
 		2E71F93D1FAF3210001417AE /* InstaClient */ = {
 			isa = PBXGroup;
 			children = (
-				2E71F93E1FAF3210001417AE /* AppDelegate.swift */,
-				2E71F9401FAF3210001417AE /* ViewController.swift */,
-				2E71F9421FAF3210001417AE /* Main.storyboard */,
-				2E71F9451FAF3210001417AE /* Assets.xcassets */,
-				2E71F9471FAF3210001417AE /* LaunchScreen.storyboard */,
-				2E71F94A1FAF3210001417AE /* Info.plist */,
+				2E71F9731FAF32F7001417AE /* Resources */,
+				2E71F9661FAF32C5001417AE /* Core */,
+				2E71F9651FAF32C5001417AE /* Model */,
+				2E71F9681FAF32C5001417AE /* Services */,
+				2E71F9691FAF32C5001417AE /* View */,
 			);
 			path = InstaClient;
 			sourceTree = "<group>";
@@ -94,6 +94,63 @@
 				2E71F9551FAF3210001417AE /* Info.plist */,
 			);
 			path = InstaClientTests;
+			sourceTree = "<group>";
+		};
+		2E71F9651FAF32C5001417AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2E71F9661FAF32C5001417AE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2E71F9671FAF32C5001417AE /* AppDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2E71F9681FAF32C5001417AE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2E71F9691FAF32C5001417AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2E71F96A1FAF32C5001417AE /* Cell */,
+				2E71F96B1FAF32C5001417AE /* ViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2E71F96A1FAF32C5001417AE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		2E71F96B1FAF32C5001417AE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2E71F96C1FAF32C5001417AE /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2E71F9731FAF32F7001417AE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2E71F9741FAF32F7001417AE /* Assets.xcassets */,
+				2E71F9751FAF32F7001417AE /* LaunchScreen.storyboard */,
+				2E71F9771FAF32F7001417AE /* Main.storyboard */,
+				2E71F9791FAF32F7001417AE /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,9 +236,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E71F9491FAF3210001417AE /* LaunchScreen.storyboard in Resources */,
-				2E71F9461FAF3210001417AE /* Assets.xcassets in Resources */,
-				2E71F9441FAF3210001417AE /* Main.storyboard in Resources */,
+				2E71F97D1FAF32F7001417AE /* Info.plist in Resources */,
+				2E71F97C1FAF32F7001417AE /* Main.storyboard in Resources */,
+				2E71F97A1FAF32F7001417AE /* Assets.xcassets in Resources */,
+				2E71F97B1FAF32F7001417AE /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,8 +257,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E71F9411FAF3210001417AE /* ViewController.swift in Sources */,
-				2E71F93F1FAF3210001417AE /* AppDelegate.swift in Sources */,
+				2E71F9721FAF32C5001417AE /* ViewController.swift in Sources */,
+				2E71F9711FAF32C5001417AE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,20 +281,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2E71F9421FAF3210001417AE /* Main.storyboard */ = {
+		2E71F9751FAF32F7001417AE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2E71F9431FAF3210001417AE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2E71F9471FAF3210001417AE /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2E71F9481FAF3210001417AE /* Base */,
+				2E71F9761FAF32F7001417AE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2E71F9771FAF32F7001417AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E71F9781FAF32F7001417AE /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -355,7 +413,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NX56283KF9;
-				INFOPLIST_FILE = InstaClient/Info.plist;
+				INFOPLIST_FILE = InstaClient/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.insta.InstaClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -370,7 +428,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NX56283KF9;
-				INFOPLIST_FILE = InstaClient/Info.plist;
+				INFOPLIST_FILE = InstaClient/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.insta.InstaClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
