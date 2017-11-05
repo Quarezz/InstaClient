@@ -12,5 +12,9 @@ Also other user can’t be used to get recent media but ID of my current user wo
 
 There are some issues with Instagram Oauth. I’ve spent some time trying to use SFSafariViewController and SFAuthenticationSession but no luck. The thing is instagram doesn’t allow to use url-schema as callback url. Maybe there is some neat way to solve this issue but I went with regular UIWebView request sniff. 
 
+* Tests
+
+Mine Xcode have some issues with code coverage reports. Don’t know if this is a configuration issue. It says the coverage is 0%, but you can clearly see test cases steps on the right panel. 
+All services are covered. I left models and viewControllers alone, but it’s pretty easy to cover them too.
 
 
