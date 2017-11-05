@@ -14,13 +14,13 @@ class FeedItem: NSObject {
     
     public let identifier: String
     public let author: String
-    public let text: String
+    public var text: String?
     public let imageUrl: URL
     public let likesCount: Int
     
     // MARK: Initialization
     
-    init(id: String, author: String, text: String, imageUrl: URL, likes: Int) {
+    init(id: String, author: String, text: String?, imageUrl: URL, likes: Int) {
         
         self.identifier = id
         self.author = author

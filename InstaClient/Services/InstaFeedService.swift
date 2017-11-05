@@ -38,7 +38,7 @@ class InstaFeedService: NSObject, InstaFeedServiceInterface {
                 print("Received feed: \(media)")
                 let feed = media.map({ FeedItem(id: $0.id,
                                                 author: $0.user.username,
-                                                text: $0.caption?.text ?? "",
+                                                text: $0.caption?.text,
                                                 imageUrl: $0.thumbnailURL,
                                                 likes: $0.likesCount) })
                 result(FeedFetchResult.success(feed: feed, nextPageId: info.nextMaxId))
@@ -60,7 +60,7 @@ class InstaFeedService: NSObject, InstaFeedServiceInterface {
                 print("Received feed: \(media)")
                 let feed = media.map({ FeedItem(id: $0.id,
                                                 author: $0.user.username,
-                                                text: $0.caption?.text ?? "",
+                                                text: $0.caption?.text,
                                                 imageUrl: $0.thumbnailURL,
                                                 likes: $0.likesCount) })
                 result(FeedFetchResult.success(feed: feed, nextPageId: info.nextMaxId))

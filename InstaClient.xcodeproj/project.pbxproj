@@ -25,6 +25,11 @@
 		2E71F9951FAF635C001417AE /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71F9941FAF635C001417AE /* LoginModel.swift */; };
 		2E827CDE1FAF7E5E004118E7 /* FeedItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E827CDD1FAF7E5E004118E7 /* FeedItemCell.swift */; };
 		2E827CE01FAF7EF7004118E7 /* FeedItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E827CDF1FAF7EF7004118E7 /* FeedItemCell.xib */; };
+		2E827CE21FAF8F47004118E7 /* InstaFeedServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E827CE11FAF8F47004118E7 /* InstaFeedServiceTests.swift */; };
+		2E827CE31FAF8FA9004118E7 /* InstaFeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71F9851FAF341E001417AE /* InstaFeedService.swift */; };
+		2E827CE41FAF8FB5004118E7 /* InstaFeedServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71F9831FAF340F001417AE /* InstaFeedServiceInterface.swift */; };
+		2E827CE51FAF914A004118E7 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71F9881FAF3533001417AE /* FeedItem.swift */; };
+		6BE53F33DF3DF51C0D4E60BC /* Pods_InstaClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A2820FCDAAE5F110A50C8B8 /* Pods_InstaClientTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		038E0ABD9439CA31558AFC14 /* Pods-InstaClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaClientTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstaClientTests/Pods-InstaClientTests.debug.xcconfig"; sourceTree = "<group>"; };
 		040867F46A4AE4A68EBBF969 /* Pods_InstaClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1205408897E26D39900FF182 /* Pods-InstaClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaClientTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstaClientTests/Pods-InstaClientTests.release.xcconfig"; sourceTree = "<group>"; };
 		2E71F93B1FAF3210001417AE /* InstaClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E71F94F1FAF3210001417AE /* InstaClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E71F9531FAF3210001417AE /* InstaClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaClientTests.swift; sourceTree = "<group>"; };
@@ -60,7 +67,9 @@
 		2E71F9941FAF635C001417AE /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		2E827CDD1FAF7E5E004118E7 /* FeedItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemCell.swift; sourceTree = "<group>"; };
 		2E827CDF1FAF7EF7004118E7 /* FeedItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedItemCell.xib; sourceTree = "<group>"; };
+		2E827CE11FAF8F47004118E7 /* InstaFeedServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaFeedServiceTests.swift; sourceTree = "<group>"; };
 		50C6AE259E1BC6D2C35D1572 /* Pods-InstaClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstaClient/Pods-InstaClient.release.xcconfig"; sourceTree = "<group>"; };
+		8A2820FCDAAE5F110A50C8B8 /* Pods_InstaClientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaClientTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAB2FAA2876419F94EFFA537 /* Pods-InstaClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstaClient/Pods-InstaClient.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BE53F33DF3DF51C0D4E60BC /* Pods_InstaClientTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +131,7 @@
 			children = (
 				2E71F9531FAF3210001417AE /* InstaClientTests.swift */,
 				2E71F9551FAF3210001417AE /* Info.plist */,
+				2E827CE11FAF8F47004118E7 /* InstaFeedServiceTests.swift */,
 			);
 			path = InstaClientTests;
 			sourceTree = "<group>";
@@ -205,6 +216,8 @@
 			children = (
 				AAB2FAA2876419F94EFFA537 /* Pods-InstaClient.debug.xcconfig */,
 				50C6AE259E1BC6D2C35D1572 /* Pods-InstaClient.release.xcconfig */,
+				038E0ABD9439CA31558AFC14 /* Pods-InstaClientTests.debug.xcconfig */,
+				1205408897E26D39900FF182 /* Pods-InstaClientTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -213,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				040867F46A4AE4A68EBBF969 /* Pods_InstaClient.framework */,
+				8A2820FCDAAE5F110A50C8B8 /* Pods_InstaClientTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -244,9 +258,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E71F95B1FAF3210001417AE /* Build configuration list for PBXNativeTarget "InstaClientTests" */;
 			buildPhases = (
+				8C6C44F5390D0A3C11929BEB /* [CP] Check Pods Manifest.lock */,
 				2E71F94B1FAF3210001417AE /* Sources */,
 				2E71F94C1FAF3210001417AE /* Frameworks */,
 				2E71F94D1FAF3210001417AE /* Resources */,
+				F8C0AD6A6774395DBFEAAD68 /* [CP] Embed Pods Frameworks */,
+				C0E3B6E29B860C23CECB26F7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -357,6 +374,39 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InstaClient/Pods-InstaClient-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8C6C44F5390D0A3C11929BEB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstaClientTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0E3B6E29B860C23CECB26F7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InstaClientTests/Pods-InstaClientTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E6E375CF73008493781D9113 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -373,6 +423,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8C0AD6A6774395DBFEAAD68 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-InstaClientTests/Pods-InstaClientTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/InstagramKit/InstagramKit.framework",
+				"${BUILT_PRODUCTS_DIR}/UICKeyChainStore/UICKeyChainStore.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InstagramKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICKeyChainStore.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InstaClientTests/Pods-InstaClientTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -401,7 +473,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E827CE31FAF8FA9004118E7 /* InstaFeedService.swift in Sources */,
 				2E71F9541FAF3210001417AE /* InstaClientTests.swift in Sources */,
+				2E827CE21FAF8F47004118E7 /* InstaFeedServiceTests.swift in Sources */,
+				2E827CE51FAF914A004118E7 /* FeedItem.swift in Sources */,
+				2E827CE41FAF8FB5004118E7 /* InstaFeedServiceInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -570,6 +646,7 @@
 		};
 		2E71F95C1FAF3210001417AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 038E0ABD9439CA31558AFC14 /* Pods-InstaClientTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -587,6 +664,7 @@
 		};
 		2E71F95D1FAF3210001417AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1205408897E26D39900FF182 /* Pods-InstaClientTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

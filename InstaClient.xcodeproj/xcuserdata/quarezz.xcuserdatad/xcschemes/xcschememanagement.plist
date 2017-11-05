@@ -7,7 +7,20 @@
 		<key>InstaClient.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>2E71F93A1FAF3210001417AE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2E71F94E1FAF3210001417AE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

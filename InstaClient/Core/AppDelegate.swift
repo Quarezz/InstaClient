@@ -23,6 +23,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        if (NSClassFromString("XCTest") != nil)
+        {
+            return true
+        }
+        
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = self.flowCoordinator.initialViewController()
         self.window?.makeKeyAndVisible()
