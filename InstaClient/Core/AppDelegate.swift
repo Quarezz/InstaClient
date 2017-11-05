@@ -11,10 +11,21 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    // MARK: Public variables
+    
     var window: UIWindow?
+    
+    // MARK: Private variables
+    
+    private let flowCoordinator = InstaFeedCoordinator()
+    
+    // MARK: UIApplicationDelegate
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = self.flowCoordinator.initialViewController()
+        self.window?.makeKeyAndVisible()
         
         return true
     }

@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		2E71F9541FAF3210001417AE /* InstaClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71F9531FAF3210001417AE /* InstaClientTests.swift */; };
 		2E71F9711FAF32C5001417AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71F9671FAF32C5001417AE /* AppDelegate.swift */; };
-		2E71F9721FAF32C5001417AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71F96C1FAF32C5001417AE /* ViewController.swift */; };
 		2E71F97A1FAF32F7001417AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E71F9741FAF32F7001417AE /* Assets.xcassets */; };
 		2E71F97B1FAF32F7001417AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E71F9751FAF32F7001417AE /* LaunchScreen.storyboard */; };
-		2E71F97C1FAF32F7001417AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E71F9771FAF32F7001417AE /* Main.storyboard */; };
-		2E71F97D1FAF32F7001417AE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E71F9791FAF32F7001417AE /* Info.plist */; };
+		2E71F97F1FAF3344001417AE /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71F97E1FAF3344001417AE /* FeedViewController.swift */; };
+		2E71F9821FAF3402001417AE /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71F9811FAF3402001417AE /* FeedModel.swift */; };
+		2E71F9841FAF340F001417AE /* InstaFeedServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71F9831FAF340F001417AE /* InstaFeedServiceInterface.swift */; };
+		2E71F9861FAF341E001417AE /* InstaFeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71F9851FAF341E001417AE /* InstaFeedService.swift */; };
+		2E71F9891FAF3533001417AE /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71F9881FAF3533001417AE /* FeedItem.swift */; };
+		2E71F98B1FAF36A9001417AE /* InstaFeedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71F98A1FAF36A9001417AE /* InstaFeedCoordinator.swift */; };
+		2E71F98D1FAF37FB001417AE /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E71F98C1FAF37FB001417AE /* Feed.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,11 +36,16 @@
 		2E71F9531FAF3210001417AE /* InstaClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaClientTests.swift; sourceTree = "<group>"; };
 		2E71F9551FAF3210001417AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E71F9671FAF32C5001417AE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2E71F96C1FAF32C5001417AE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2E71F9741FAF32F7001417AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E71F9761FAF32F7001417AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2E71F9781FAF32F7001417AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2E71F9791FAF32F7001417AE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E71F97E1FAF3344001417AE /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		2E71F9811FAF3402001417AE /* FeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
+		2E71F9831FAF340F001417AE /* InstaFeedServiceInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaFeedServiceInterface.swift; sourceTree = "<group>"; };
+		2E71F9851FAF341E001417AE /* InstaFeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaFeedService.swift; sourceTree = "<group>"; };
+		2E71F9881FAF3533001417AE /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+		2E71F98A1FAF36A9001417AE /* InstaFeedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaFeedCoordinator.swift; sourceTree = "<group>"; };
+		2E71F98C1FAF37FB001417AE /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +87,7 @@
 		2E71F93D1FAF3210001417AE /* InstaClient */ = {
 			isa = PBXGroup;
 			children = (
+				2E71F9871FAF352C001417AE /* Entity */,
 				2E71F9731FAF32F7001417AE /* Resources */,
 				2E71F9661FAF32C5001417AE /* Core */,
 				2E71F9651FAF32C5001417AE /* Model */,
@@ -99,6 +109,7 @@
 		2E71F9651FAF32C5001417AE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2E71F9811FAF3402001417AE /* FeedModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -107,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				2E71F9671FAF32C5001417AE /* AppDelegate.swift */,
+				2E71F98A1FAF36A9001417AE /* InstaFeedCoordinator.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -114,6 +126,8 @@
 		2E71F9681FAF32C5001417AE /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				2E71F9831FAF340F001417AE /* InstaFeedServiceInterface.swift */,
+				2E71F9851FAF341E001417AE /* InstaFeedService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -137,7 +151,7 @@
 		2E71F96B1FAF32C5001417AE /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				2E71F96C1FAF32C5001417AE /* ViewController.swift */,
+				2E71F97E1FAF3344001417AE /* FeedViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -147,10 +161,18 @@
 			children = (
 				2E71F9741FAF32F7001417AE /* Assets.xcassets */,
 				2E71F9751FAF32F7001417AE /* LaunchScreen.storyboard */,
-				2E71F9771FAF32F7001417AE /* Main.storyboard */,
 				2E71F9791FAF32F7001417AE /* Info.plist */,
+				2E71F98C1FAF37FB001417AE /* Feed.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		2E71F9871FAF352C001417AE /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				2E71F9881FAF3533001417AE /* FeedItem.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,10 +258,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E71F97D1FAF32F7001417AE /* Info.plist in Resources */,
-				2E71F97C1FAF32F7001417AE /* Main.storyboard in Resources */,
 				2E71F97A1FAF32F7001417AE /* Assets.xcassets in Resources */,
 				2E71F97B1FAF32F7001417AE /* LaunchScreen.storyboard in Resources */,
+				2E71F98D1FAF37FB001417AE /* Feed.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +278,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E71F9721FAF32C5001417AE /* ViewController.swift in Sources */,
+				2E71F97F1FAF3344001417AE /* FeedViewController.swift in Sources */,
+				2E71F9821FAF3402001417AE /* FeedModel.swift in Sources */,
+				2E71F98B1FAF36A9001417AE /* InstaFeedCoordinator.swift in Sources */,
+				2E71F9891FAF3533001417AE /* FeedItem.swift in Sources */,
 				2E71F9711FAF32C5001417AE /* AppDelegate.swift in Sources */,
+				2E71F9841FAF340F001417AE /* InstaFeedServiceInterface.swift in Sources */,
+				2E71F9861FAF341E001417AE /* InstaFeedService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,14 +313,6 @@
 				2E71F9761FAF32F7001417AE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		2E71F9771FAF32F7001417AE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2E71F9781FAF32F7001417AE /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -414,6 +432,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NX56283KF9;
 				INFOPLIST_FILE = InstaClient/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.insta.InstaClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -429,6 +448,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NX56283KF9;
 				INFOPLIST_FILE = InstaClient/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.insta.InstaClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
