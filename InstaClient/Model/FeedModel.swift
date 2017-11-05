@@ -35,6 +35,7 @@ class FeedModel {
     deinit {
         
         self.imagesLoadingQueue.cancelAllOperations()
+        self.imagesAwaitCallback = nil
         self.imageCacheService.clear()
     }
     

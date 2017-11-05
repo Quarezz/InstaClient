@@ -57,6 +57,16 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChangeFrame), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
+    }
+    
     // MARK: IBActions
     
     @IBAction func tappedFetch(_ sender: Any) {
@@ -190,5 +200,26 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         cell.setData(self.feed[indexPath.row])
         return cell
+    }
+    
+    // MARK: Keyboard
+    
+    @objc func keyboardWillChangeFrame(notification: Notification) {
+        
+        guard let origin = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? CGRect)?.origin else {
+            return
+        }
+        
+        let bottomOffset = self.view.bounds.height - origin.y
+        
+        let duration = notification.userInfo?[UIKeyboardAnimationDurationUserInfoKey] as? TimeInterval
+        let curve = notification.userInfo?[UIKeyboardAnimationCurveUserInfoKey] as? UInt
+        
+        UIView.animate(withDuration: duration ?? 0.4, delay: 0, options: UIViewAnimationOptions(rawValue: curve ?? 0), animations: {
+            
+            var inset = self.tableView.contentInset
+            inset.bottom = bottomOffset
+            self.tableView.contentInset = inset
+        }, completion: nil)
     }
 }
