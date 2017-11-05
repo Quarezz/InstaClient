@@ -10,4 +10,19 @@ import UIKit
 
 class FeedItem: NSObject {
 
+    // MARK: Public variables
+    
+    public let identifier: String
+    public let text: String
+    public let imageUrl: URL
+    
+    // MARK: Initialization
+    
+    init(id: String, text: String, imageUrl: URL) {
+        
+        self.identifier = id
+        self.text = text
+        self.imageUrl = imageUrl
+        super.init()
+    }
 }
