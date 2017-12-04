@@ -1,6 +1,15 @@
 # InstaClient
 App build using Xcode9 + cocoapods1.3.1
 
+# Task
+The test task is to implement a simplified version of Instagram client.
+It should contain:
+* Auth via Instagram (implicit version)
+* Display recent media of user, which ID can be entered in text field. List item should contain: author name, text, likes count. Do not spend too much time on UI layout.
+* Implement your own cache for images. Cache parameters: LRU, 25Mb, RAM-only.
+* Cover your code with unit tests.
+* Use Instagram API in Sandbox mode.
+
 ## Notes:
 * SDK
 
